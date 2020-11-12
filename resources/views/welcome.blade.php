@@ -90,7 +90,6 @@
         </style>
     </head>
     <body>
-       
        <div style="height: 60px;width: 100%;display: flex;justify-content: center;align-items: center;align-content:center;margin-bottom:20px;border-bottom: 1px solid #d4d2d2;text-align:center;">
             <span>HEADER</span>
        </div>
@@ -102,7 +101,13 @@
                 <li><a href="{{url($page->url)}}?sort=createdDate">по дате</a></li>
                 <li><a href="{{url($page->url)}}?sort=orderNum">по порядку</a></li>
                 @foreach($children as $child)
-                @if($child->url !='default')<li><a href="{{url($child->url)}}">{{$child->caption}}</a></li>@endif
+                    @if($child->url !='default')
+                        @if($child->aliasOf)
+                            <li><a href="{{url($child->aliasOf)}}?alias={{$child->url}}">{{$child->caption}}</a></li>
+                        @else
+                            <li><a href="{{url($child->url)}}">{{$child->caption}}</a></li>
+                        @endif
+                    @endif
                 @endforeach
                 </ul>
             </div>

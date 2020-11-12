@@ -30,8 +30,9 @@
                 <div><span>Caption : </span><input type="text" id="caption" name="caption"  required maxlength="71"></div>
                 <div><span>URL : </span><input type="text" id="url" name="url"  required maxlength="40"></div>
                 <div><span>parentCode : </span><input type="text" id="parentCode" name="parentCode"  required maxlength="71"></div>
-                <div><span>orderNum : </span><input type="text" id="orderNum" name="orderNum"  required maxlength="40"></div>
-                <div><span>Content : </span><textarea style="height:700px;width:700px;" type="text" id="content" name="content" required pattern="<([A-Z][A-Z0-9]*)\b[^>]*>(.*?)</\1>"></textarea></div>
+                <div><span>orderNum : </span><input type="text" id="orderNum" name="orderNum" maxlength="40"></div>
+                <div><span>aliasOf : </span><input type="text" id="aliasOf" name="aliasOf"  maxlength="40"></div>
+                <div><span>Content : </span><textarea style="height:700px;width:700px;" type="text" id="content" name="content"  ></textarea></div>
                 <input type="submit" id="form-submit" value="Надіслати">
         </form>
         

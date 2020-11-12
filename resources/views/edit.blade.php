@@ -31,6 +31,7 @@
                 <div><span>Caption : </span><input type="text" id="caption" name="caption" value="{{$page->caption}}" ></div>
                 <div><span>parentCode : </span><input type="text" id="parentCode" name="parentCode" value="{{$page->parentCode}}" ></div>
                 <div><span>orderNum : </span><input type="text" id="orderNum" name="orderNum" value="{{$page->orderNum}}" ></div>
+                <div><span>aliasOf : </span><input type="text" id="aliasOf" name="aliasOf" value="{{$page->aliasOf}}" ></div>
                 <div><span>Content : </span><textarea style="height:700px;width:700px;" type="text" id="content" name="content" required>{{$page->content}}</textarea></div>
                
                 <input type="text" name='id' style="display:none" value='{{$page->id}}'>

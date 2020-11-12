@@ -20,6 +20,7 @@
             <tr>
                 <td>URL</td>
                 <td>parentCode</td>
+                <td>aliasOf</td>
                 <td>orderNum</td>
                 <td>CAPTION</td>
                 <td>CREATED</td>
@@ -31,6 +32,7 @@
             
                 <td><span>{{$page->url}}</span></td>
                 <td><span>{{$page->parentCode}}</span></td>
+                <td><span>{{$page->aliasOf}}</span></td>
                 <td><span>{{$page->orderNum}}</span></td>
                 <td><span>{{$page->caption}}</span></td>
                 <td><span>{{$page->createdDate}}</span></td>
